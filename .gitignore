@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+# Never commit credentials or account stores
+auth.json
+accounts.json
+backups/
