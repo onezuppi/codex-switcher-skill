@@ -28,7 +28,7 @@ Codex Switcher, OpenAI, or Anthropic.
 Copy the skill folder into your agent's skills directory.
 
 ```bash
-git clone https://github.com/<your-user>/codex-accounts-skill.git
+git clone https://github.com/onezuppi/codex-accounts-skill.git
 # Claude Code
 cp -r codex-accounts-skill/skills/codex-accounts ~/.claude/skills/
 # Codex
