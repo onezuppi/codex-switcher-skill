@@ -1,4 +1,4 @@
-# codex-accounts-skill
+# codex-switcher-skill
 
 An agent skill that lets Claude Code, Codex, or any agent that supports
 `SKILL.md` skills manage multiple Codex (ChatGPT) accounts from chat:
@@ -28,11 +28,11 @@ Codex Switcher, OpenAI, or Anthropic.
 Copy the skill folder into your agent's skills directory.
 
 ```bash
-git clone https://github.com/onezuppi/codex-accounts-skill.git
+git clone https://github.com/onezuppi/codex-switcher-skill.git
 # Claude Code
-cp -r codex-accounts-skill/skills/codex-accounts ~/.claude/skills/
+cp -r codex-switcher-skill/skills/codex-accounts ~/.claude/skills/
 # Codex
-cp -r codex-accounts-skill/skills/codex-accounts ~/.codex/skills/
+cp -r codex-switcher-skill/skills/codex-accounts ~/.codex/skills/
 ```
 
 On Windows PowerShell use `Copy-Item -Recurse` with the same paths.
