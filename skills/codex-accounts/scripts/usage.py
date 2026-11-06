@@ -96,6 +96,8 @@ def print_usage(data):
     credits = data.get("credits")
     if credits:
         found = True
-        print(f"  credits: balance {credits.get('balance', '?')}, unlimited {credits.get('unlimited', '?')}")
+        balance = credits.get("balance")
+        print(f"  credits: balance {'-' if balance is None else balance}, "
+              f"unlimited {credits.get('unlimited', '?')}")
     if not found:
         print(f"  unrecognized response shape, top-level fields: {sorted(data.keys())}")
