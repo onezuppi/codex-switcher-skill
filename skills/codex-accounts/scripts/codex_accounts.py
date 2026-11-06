@@ -16,7 +16,10 @@ import os
 import shutil
 import sys
 
-from apps import close_apps, open_codex
+# Make the sibling modules importable even under `python -I`, which skips the script directory.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from apps import close_apps, open_codex  # noqa: E402
 from store import (TOKEN_KEYS, account_index, accounts_path, active_account, auth_path, find_account,
                    load_json, load_store, now_iso, save_json, switcher_dir, write_back_active_tokens)
 from usage import fetch_usage, print_usage
